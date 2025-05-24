@@ -1,0 +1,15 @@
+Loaded Dataset: Imported Bitext Customer Support CSV with instruction and response columns.
+Selected 1000 Rows: Randomly sampled 1000 rows for faster training using df.sample(n=1000).
+Cleaned Data: Removed NaN, non-string, and empty values from instruction and response.
+Tokenized Data: Used GPT2Tokenizer to convert text to input_ids and attention_mask.
+Converted to Tensors: Manually mapped dataset to PyTorch tensors to avoid ValueError.
+Loaded Model: Initialized GPT2LMHeadModel with distilgpt2 weights.
+Set Training Parameters: Configured 3 epochs, batch size 4, and saved every 500 steps.
+Trained Model: Fine-tuned model on 1000 rows for fashion chatbot responses.
+Saved Model: Saved trained model and tokenizer to /content/drive/MyDrive/fashion_bot_model.
+Tested Model: Tested with questions like "Can I cancel my order?" and got relevant responses.
+Created Pie Charts: Visualized category and intent distributions using Plotly.
+Zipped Model: Zipped model folder for download with !zip -r fashion_bot_model.zip.
+Resolved Errors: Fixed ValueError, FileExistsError, and runtime disconnect issues.
+Checked Drive: Verified model files in Drive using os.listdir() to ensure saving.
+Prepared for Internship: Collected responses for presentation to showcase chatbot performance.
